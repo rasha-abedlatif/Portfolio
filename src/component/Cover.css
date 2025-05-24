@@ -1,0 +1,126 @@
+
+.banner {
+    margin-top: 0;
+    padding: 80px 0 100px 0;
+    background: linear-gradient(180deg, #0f1a2b 0%, #1c2e4a 100%); /* Darker, smoother gradient */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner .tagline {
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    padding: 8px 12px;
+    font-size: 60px;
+    margin-bottom: 16px;
+    display: inline-block;
+    color: #f5f5f5; 
+}
+
+.banner h1 {
+    font-size: 65px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    line-height: 1;
+    margin-bottom: 20px;
+    display: block;
+    color: #f5f5f5; /* Brighter, more modern text */
+}
+
+.banner p {
+    color: #d1cfc9; /* Balanced readability */
+    font-size: 20px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    width: 96%;
+}
+
+.banner button {
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 60px;
+    letter-spacing: 0.8px;
+    display: flex;
+    align-items: center;
+    padding: 12px 24px;
+    border-radius: 8px;
+    background-color: #44576b; 
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+span, .arrow{
+    color: white;
+}
+
+.banner button:hover {
+    background-color: #0f1a2b; /* Deep contrast */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3); /* Clean elevation */
+}
+
+.banner button svg {
+    font-size: 25px;
+    margin-left: 10px;
+    transition: 0.3s ease-in-out;
+    line-height: 1;
+}
+
+.banner button:hover svg {
+    margin-left: 25px;
+}
+
+.banner img {
+    animation: updown 3s linear infinite;
+}
+
+@keyframes updown {
+    0% { transform: translateY(-20px); }
+    50% { transform: translateY(20px); }
+    100% { transform: translateY(-20px); }
+}
+
+.txt-rotate > .wrap {
+    border-right: 0.08em solid #d1cfc9; /* Cleaner border effect */
+}
+@media (max-width: 992px) {
+  .img-shift-left {
+    margin-left: -120px;
+  }
+   .banner p {
+    font-size: 21px;
+}
+}
+@media(max-width:768px){
+     .img-shift-left {
+    margin-left: 10px;
+  }
+  .banner p {
+    font-size: 25px;
+}
+}
+@media screen and (max-width: 500px) {
+  .banner .tagline {
+    font-size: 1.5rem; 
+  }
+
+  .banner h1 {
+    font-size: 1.4rem; 
+    line-height: 1.2;
+  }
+
+  .banner p {
+    font-size: 0.95rem; 
+    line-height: 1.5;
+  }
+
+  .img-shift-left {
+    max-width: 260px; 
+  }
+
+  .connect-btn {
+    font-size: 0.95rem;
+    padding: 10px 20px;
+  }
+
+  .connect-btn .arrow {
+    font-size: 20px;
+  }
+}

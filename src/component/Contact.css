@@ -1,0 +1,128 @@
+section > h2,
+section > h5 {
+  text-align: center;
+  font-size: 2rem;
+  color: #1B2A41; /* Rich Navy */
+}
+
+section > h2 {
+  margin-bottom: 3rem;
+}
+
+#connect {
+  margin-top: 0 !important;
+}
+
+.contact {
+  background: #F0ECE3; /* Soft Buttercream Beige */
+  padding: 60px 0 120px 0;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.contact h2 {
+  font-size: 42px;
+  font-weight: 700;
+  color: #1B2A41; /* Rich Navy */
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.contact_ooptions {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.earth_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 20px;
+}
+
+.rotating-earth {
+  width: 500px;
+  height: 400px;
+  animation: spin 30s linear infinite;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.contact form input,
+.contact form textarea {
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #C7C9CB; /* Soft Gray */
+  border-radius: 12px;
+  color: #1B2A41; /* Rich Navy */
+  padding: 16px 20px;
+  margin-bottom: 12px;
+  font-size: 16px;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.contact form input:focus,
+.contact form textarea:focus {
+  border-color: #4A6478; /* Dusty Blue */
+  box-shadow: 0 0 0 3px rgba(74, 100, 120, 0.2); /* Dusty Blue outline */
+  outline: none;
+}
+
+.contact form input::placeholder,
+.contact form textarea::placeholder {
+  color: #98A1AE;
+  font-size: 14px;
+}
+
+.contact form button {
+  background-color: #4A6478; /* Dusty Blue */
+  color: #ffffff;
+  font-weight: 600;
+  padding: 14px 40px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  transition: 0.3s;
+  margin-top: 20px;
+}
+
+.contact form button:hover {
+  background-color: #1B2A41; /* Rich Navy */
+}
+
+/* Social icon consistency */
+.social-icon {
+  border: 1px solid #4A6478; /* Dusty Blue */
+  color: #4A6478;
+  transition: 0.3s;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.social-icon:hover {
+  background-color: #1B2A41;
+  color: #ffffff;
+}
+
+.vertical-line {
+  height: 40px;
+  width: 2px;
+  background-color: #1B2A41;
+  margin: 0 auto;
+}
+
+.scroll_down {
+  color: #4A6478;
+  font-size: 0.85rem;
+  text-align: center;
+}
